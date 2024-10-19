@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Chat Sign Up</title>
+        <link rel="stylesheet" type="text/css" href="./css/sign_up.css">
+        <link rel="shortcut icon" href="./images/chat_app_icon2.png">
+    </head>
+    <body>
+        <div id="container">
+            <input type="text" id="username" placeholder="Enter username" required>
+            <input type="password" id="password" placeholder="Enter password" required>
+            <input type="password" id="password_check" placeholder="Re-enter password" required>
+            <button id="submit_button" onclick="submit()">Sign Up</button>
+            <p onclick="login_page()">Log in instead</p>
+        </div>
+        <script src="http://maxvek.com/chat/socket.io/socket.io.js"></script>
+        <script src="./js/sign_up.js"></script>
+        <script src="./utils/signup_listener.js"></script>
+    </body>
+</html>
